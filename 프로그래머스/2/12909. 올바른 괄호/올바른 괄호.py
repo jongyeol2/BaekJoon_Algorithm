@@ -11,8 +11,8 @@ def solution(s):
     # 주석 그대로 코드짜보면
     
     # 조건1
-    if s[0] == ')' or s[-1] == '(':
-        answer = False
+    # if s[0] == ')' or s[-1] == '(':
+    #     answer = False
     
     num = 0
     
