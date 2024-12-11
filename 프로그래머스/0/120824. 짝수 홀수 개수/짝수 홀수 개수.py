@@ -1,11 +1,9 @@
 def solution(num_list):
-    a = []
-    b = []
+    answer = [0,0]
     for i in num_list:
         if i % 2 == 0:
-            a.append(i)
+            answer[0] += 1
         else:
-            b.append(i)
+            answer[1] += 1
     
-    answer = [len(a),len(b)]
     return answer
