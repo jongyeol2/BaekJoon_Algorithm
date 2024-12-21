@@ -1,3 +1,5 @@
 def solution(arr, intervals):
-    answer = arr[intervals[0][0]:intervals[0][1] + 1] + arr[intervals[1][0]:intervals[1][1] + 1]
+    a1, b1 = intervals[0]
+    a2, b2 = intervals[1]
+    answer = arr[a1:b1+1] + arr[a2:b2+1]
     return answer
