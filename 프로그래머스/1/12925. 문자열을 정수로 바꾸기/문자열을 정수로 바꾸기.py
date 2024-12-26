@@ -1,2 +1,2 @@
 def solution(s):
-    return eval(s)
+    return int(s)
