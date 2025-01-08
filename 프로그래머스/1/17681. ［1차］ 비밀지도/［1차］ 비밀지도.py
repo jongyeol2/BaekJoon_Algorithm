@@ -2,6 +2,7 @@ def solution(n, arr1, arr2):
     answer = []
     bin_arr1 = []
     bin_arr2 = []
+    
     for i in arr1:
         bin_i = bin(i)[2:].zfill(n)
         bin_arr1.append(bin_i)
