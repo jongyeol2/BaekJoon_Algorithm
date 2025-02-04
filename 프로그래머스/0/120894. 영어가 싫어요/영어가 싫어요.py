@@ -1,12 +1,16 @@
 def solution(numbers):
-    numbers = numbers.replace('zero', '0')
-    numbers = numbers.replace('one', '1')
-    numbers = numbers.replace('two', '2')
-    numbers = numbers.replace('three', '3')
-    numbers = numbers.replace('four', '4')
-    numbers = numbers.replace('five', '5')
-    numbers = numbers.replace('six', '6')
-    numbers = numbers.replace('seven', '7')
-    numbers = numbers.replace('eight', '8')
-    numbers = numbers.replace('nine', '9')
+    num_dict = {
+        'zero' : '0',
+        'one' : '1',
+        'two' : '2',
+        'three' : '3',
+        'four' : '4',
+        'five' : '5',
+        'six' : '6',
+        'seven' : '7',
+        'eight' : '8',
+        'nine' : '9',
+    }
+    for word, num in num_dict.items():
+        numbers = numbers.replace(word, num)
     return int(numbers)
