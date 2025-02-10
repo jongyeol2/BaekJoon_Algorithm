@@ -1,11 +1,8 @@
 def solution(price, money, count):
-    total = 0
-    for i in range(1,count+1):
-        total += price*i
+    total = (count / 2)*(price + price*count)
+    change = money - total
     
-    if (money - total) >= 0:
-        answer = 0
+    if change >= 0:
+        return 0
     else:
-        answer = abs(money-total)
-    
-    return answer
+        return abs(change)
