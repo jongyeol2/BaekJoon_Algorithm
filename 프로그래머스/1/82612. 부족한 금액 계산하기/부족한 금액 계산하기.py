@@ -1,5 +1,5 @@
 def solution(price, money, count):
-    total = (count / 2)*(price + price*count)
+    total = count*(price + price*count) / 2
     change = money - total
     
     if change >= 0:
