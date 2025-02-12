@@ -6,6 +6,6 @@ def solution(n):
             if i not in answer:
                 answer.append(i)
             n //= i
-        if n == 1:
-            break
+        # if n == 1:
+        #     break
     return answer
