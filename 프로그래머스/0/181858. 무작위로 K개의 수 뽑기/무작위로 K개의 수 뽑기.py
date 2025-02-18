@@ -1,11 +1,7 @@
 def solution(arr, k):
-    answer = []
-    
-    for i in arr:
-        if i not in answer:
-            answer.append(i)
-        if len(answer) == k:
-            break
+    answer = list(dict.fromkeys(arr))
+    if len(answer) > k:
+        answer = answer[:k]
         
     while len(answer) != k:
             answer.append(-1)
