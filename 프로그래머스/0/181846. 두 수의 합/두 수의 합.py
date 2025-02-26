@@ -1,2 +1,4 @@
 def solution(a, b):
-    return str(eval(a+"+"+b))
+    plus = a + "+" + b
+    result = str(eval(plus))
+    return result
