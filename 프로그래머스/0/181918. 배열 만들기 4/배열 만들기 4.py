@@ -8,6 +8,6 @@ def solution(arr):
         elif stk[-1] < arr[i]:
             stk.append(arr[i])
             i += 1
-        elif stk[-1] >= arr[i]:
+        else:
             stk.pop()
     return stk
