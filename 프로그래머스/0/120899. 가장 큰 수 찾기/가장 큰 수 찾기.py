@@ -1,2 +1,3 @@
 def solution(array):
-    return [max(array), array.index(max(array))]
+    answer = [max(array), array.index(max(array))]
+    return answer
